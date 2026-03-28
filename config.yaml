@@ -1,0 +1,12 @@
+api:
+  base_url: "https://api.openai.com/v1"
+  model: "gpt-3.5-turbo"
+  temperature: 0.7
+  max_tokens: 2048
+  
+concurrency: 1
+slicing_level: 1   # 1 = split by # headers only; 2 = split by # and ## headers
+
+prompt: |
+  将以下文本翻译为中文，注意只需要输出翻译后的结果，不要额外解释：
+  {content}
